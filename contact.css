@@ -1,0 +1,84 @@
+body{
+    margin:0;
+    font-family:Vazirmatn;
+    background:#0B0F19;
+    color:#fff;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:#111827;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#FFD166;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+}
+
+.active{
+    color:#FFD166;
+}
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+    color:#FFD166;
+}
+
+.hero p{
+    color:#bbb;
+    margin-top:15px;
+}
+
+.contact-grid{
+    width:85%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    padding-bottom:80px;
+}
+
+.contact-card{
+    background:#151A24;
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    transition:.3s;
+}
+
+.contact-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px #00E5A8;
+}
+
+.contact-card i{
+    font-size:55px;
+    color:#FFD166;
+    margin-bottom:20px;
+}
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:20px;
+    color:#999;
+}
