@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>پنل مدیریت</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <div class="top-card">
+
+        <h2>سلام رهام 👋</h2>
+
+        <p>به پنل مدیریت CODM Hub خوش اومدی</p>
+
+    </div>
+<div class="admin-cards">
+
+    <div class="admin-card">
+        <h3>🎮 کاستم</h3>
+        <p>مدیریت کاستم‌های رایگان</p>
+    </div>
+
+    <div class="admin-card">
+        <h3>📢 اطلاعیه</h3>
+        <p>ثبت و ویرایش اطلاعیه‌ها</p>
+    </div>
+
+    <div class="admin-card">
+        <h3>🛒 فروشگاه</h3>
+        <p>مدیریت محصولات فروشگاه</p>
+    </div>
+
+    <div class="admin-card">
+        <h3>⚙️ تنظیمات</h3>
+        <p>تنظیمات سایت</p>
+    </div>
+
+</div>
+
+<div class="custom-panel">
+
+    <h2>مدیریت کاستم</h2>
+
+    <input id="customName" type="text" placeholder="نام کاستم">
+
+    <input id="customDate" type="date">
+
+    <input id="customTime" type="time">
+
+    <input id="customPlayers" type="text" placeholder="ظرفیت (مثلاً 100 نفر)">
+
+    <textarea placeholder="قوانین کاستم"></textarea>
+
+    <button class="save-btn">
+        ثبت کاستم
+    </button>
+
+</div>
+
+<div class="custom-list">
+    <h2>کاستم‌های ثبت شده</h2>
+
+    <div id="customList"></div>
+</div>
+
+<div id="customList"></div>
+
+<div class="news-panel">
+
+    <h2>مدیریت اطلاعیه‌ها</h2>
+
+    <input type="text" placeholder="عنوان اطلاعیه">
+
+    <textarea placeholder="متن اطلاعیه"></textarea>
+
+    <button class="save-btn">
+        ثبت اطلاعیه
+    </button>
+
+</div>
+
+    <div class="stats">
+
+        <div class="stat-box">
+            <h3>15</h3>
+            <span>اکانت</span>
+        </div>
+
+        <div class="stat-box">
+            <h3>2</h3>
+            <span>کاستم</span>
+        </div>
+
+        <div class="stat-box">
+            <h3>4</h3>
+            <span>اطلاعیه</span>
+        </div>
+
+        <div class="stat-box">
+            <h3>18</h3>
+            <span>پیام</span>
+        </div>
+
+    </div>
+
+<div class="tabs">
+
+    <button class="tab-btn active" onclick="showTab('custom')">کاستم</button>
+
+    <button class="tab-btn" onclick="showTab('shop')">فروشگاه</button>
+
+    <button class="tab-btn" onclick="showTab('news')">اطلاعیه</button>
+
+    <button class="tab-btn" onclick="showTab('settings')">تنظیمات</button>
+
+</div>
+
+<div id="custom" class="tab-content">
+    <h3>مدیریت کاستم</h3>
+    <p>فعلاً خالی است.</p>
+</div>
+
+<div id="shop" class="tab-content" style="display:none;">
+    <h3>مدیریت فروشگاه</h3>
+    <p>فعلاً خالی است.</p>
+</div>
+
+<div id="news" class="tab-content" style="display:none;">
+    <h3>مدیریت اطلاعیه‌ها</h3>
+    <p>فعلاً خالی است.</p>
+</div>
+
+<div id="settings" class="tab-content" style="display:none;">
+    <h3>تنظیمات</h3>
+    <p>فعلاً خالی است.</p>
+</div>
+
+    <div class="menu">
+
+        <button>🎮 مدیریت کاستم</button>
+
+        <button>🛒 مدیریت فروشگاه</button>
+
+        <button>📢 مدیریت اطلاعیه</button>
+
+        <button>📞 پیام کاربران</button>
+
+        <button>⚙️ تنظیمات</button>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+
+</html>
