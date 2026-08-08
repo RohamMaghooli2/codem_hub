@@ -1,3 +1,4 @@
+alert("JS اجرا شد");
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js";
 import {
     getFirestore,
@@ -18,7 +19,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 const registerBtn = document.getElementById("registerBtn");
-
+alert("JS اجرا شد");
 registerBtn.addEventListener("click", async function () {
 
     const teamName = document.getElementById("teamName").value;
@@ -28,7 +29,7 @@ registerBtn.addEventListener("click", async function () {
     const player2Id = document.getElementById("player2Id").value;
 
     const code = "CODM-" + (Math.floor(Math.random() * 9000) + 1000);
-
+alert("دکمه ثبت‌نام کار می‌کند");
     try {
 
         await setDoc(doc(db, "registrations", code), {

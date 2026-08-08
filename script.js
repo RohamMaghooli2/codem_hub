@@ -29,4 +29,3 @@ btn.classList.remove("active");
 event.target.classList.add("active");
 
 }
-
