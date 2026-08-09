@@ -1701,3 +1701,8 @@ transition:.3s;
 transform:scale(1.03);
 
 }
+
+.img_baner2 {
+    height: 120px;
+    border-radius: 20px;
+}
