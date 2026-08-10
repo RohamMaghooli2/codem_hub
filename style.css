@@ -1706,3 +1706,69 @@ transform:scale(1.03);
     height: 120px;
     border-radius: 20px;
 }
+
+
+
+
+
+
+/* ===== حاشیه رنگی متحرک بدون چرخش ===== */
+
+.tournament-card,
+.menu-item,
+.feature-card {
+    position: relative;
+    isolation: isolate;
+    border: 2px solid transparent !important;
+    background: #171717;
+}
+
+/* نوار متحرک */
+.tournament-card::before,
+.menu-item::before,
+.feature-card::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+
+    background: linear-gradient(
+        90deg,
+        #7C3AED,
+        #2563EB,
+        #00E5FF,
+        #00FF88,
+        #FFD600,
+        #FF00AA,
+        #7C3AED
+    );
+
+    background-size: 300% 100%;
+    animation: borderFlow 4s linear infinite;
+
+    z-index: -2;
+}
+
+/* فضای داخلی باکس */
+.tournament-card::after,
+.menu-item::after,
+.feature-card::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border-radius: inherit;
+    background: #171717;
+
+    z-index: -1;
+}
+
+/* حرکت نوار از چپ به راست */
+@keyframes borderFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 300% 50%;
+    }
+}
