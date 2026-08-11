@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>سفارش ثبت شد | Codem Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="order-success-page">
+
+        <section class="order-success-card">
+
+            <div class="order-success-icon">
+                ✅
+            </div>
+
+            <h1>
+                سفارش شما ثبت شد!
+            </h1>
+
+            <p>
+                سفارش شما با موفقیت ثبت شد.
+            </p>
+
+
+            <div class="order-tracking-box">
+
+                <span>
+                    کد پیگیری سفارش
+                </span>
+
+                <strong id="orderTrackingCode">
+                    در حال دریافت...
+                </strong>
+
+            </div>
+
+
+            <p class="tracking-note">
+                این کد را برای پیگیری سفارش خود نگه دارید.
+            </p>
+
+
+            <a href="shop.html" class="home-btn">
+                🛍️ بازگشت به فروشگاه
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <script>
+
+        const trackingCode =
+            localStorage.getItem("codemTrackingCode");
+
+        const codeElement =
+            document.getElementById("orderTrackingCode");
+
+
+        if (trackingCode) {
+
+            codeElement.textContent =
+                trackingCode;
+
+        } else {
+
+            codeElement.textContent =
+                "کد پیگیری پیدا نشد";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

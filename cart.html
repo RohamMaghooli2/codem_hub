@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>سبد خرید | Codem Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="cart-body">
+
+    <main class="cart-page">
+
+        <header class="cart-header">
+
+            <a href="shop.html" class="back-btn">
+                ← فروشگاه
+            </a>
+
+            <div class="cart-title">
+
+                <div class="cart-title-icon">
+                    🛒
+                </div>
+
+                <div>
+                    <h1>سبد خرید</h1>
+                    <p>محصولات انتخابی شما</p>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section id="cartItems" class="cart-items">
+
+        </section>
+
+
+        <div id="emptyCart" class="empty-cart">
+
+            <div class="empty-cart-icon">
+                🛒
+            </div>
+
+            <h2>سبد خرید خالی است</h2>
+
+            <p>
+                هنوز محصولی به سبد خرید اضافه نکرده‌اید.
+            </p>
+
+            <a href="shop.html" class="home-btn">
+                🛍️ مشاهده محصولات
+            </a>
+
+        </div>
+
+
+        <section id="cartSummary" class="cart-summary">
+
+            <div class="summary-title">
+                <span>🧾</span>
+                خلاصه سفارش
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>
+                    تعداد محصولات
+                </span>
+
+                <strong id="cartCount">
+                    ۰
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row total-row">
+
+                <span>
+                    مبلغ کل
+                </span>
+
+                <strong>
+                    <span id="cartTotal">۰</span>
+                    تومان
+                </strong>
+
+            </div>
+
+
+            <a
+                href="checkout.html"
+                id="checkoutBtn"
+                class="checkout-btn">
+
+                <span>
+                    ⚡
+                </span>
+
+                ادامه ثبت سفارش
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="nav-item">
+            <span>⌂</span>
+            خانه
+        </a>
+
+        <a href="shop.html" class="nav-item">
+            <span>🛍️</span>
+            فروشگاه
+        </a>
+
+        <a href="cart.html" class="nav-item active">
+            <span>🛒</span>
+            سبد خرید
+        </a>
+
+    </nav>
+
+
+    <script src="cart.js"></script>
+
+</body>
+
+</html>

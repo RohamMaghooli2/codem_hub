@@ -2,132 +2,440 @@
 <html lang="fa" dir="rtl">
 
 <head>
-
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <title>CODM Store</title>
+    <title>Codem Hub | فروشگاه</title>
 
-    <link rel="stylesheet" href="shop.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="header">
+    <header class="shop-header">
 
-    <h1>CODM Store</h1>
+        <h1>فروشگاه</h1>
 
-    <p>اکانت‌های منتخب Call of Duty Mobile</p>
+        <a href="cart.html" class="cart-btn">
+            🛒
+        </a>
 
-</header>
-
-
-
-<section class="featured">
-
-    <div class="featured-image">
-
-        <img src="B101.jpg" alt="Account">
-
-    </div>
-
-    <div class="featured-info">
-
-        <span class="badge">👑 Featured</span>
-
-        <h2>Account B101</h2>
-
-        <p class="price">2,990,000 تومان</p>
-
-        <ul>
-
-            <li>✔️ Max Level</li>
-
-            <li>✔️ 8 Legendary Guns</li>
-
-            <li>✔️ 2 Mythic Guns</li>
-
-            <li>✔️ Full Access</li>
-
-        </ul>
-
-        <a href="product.html"><button>مشاهده جزئیات</button></a>
-
-    </div>
-
-</section>
+    </header>
 
 
-<section class="accounts">
+    <section class="product-section">
 
-<h2>اکانت‌های جدید</h2>
+        <div class="section-title">
+            <h2>🎮 لوازم گیمینگ</h2>
+            <a href="#">همه ←</a>
+        </div>
 
-<div class="cards">
+        <div class="product-slider">
 
-<div class="card">
-<span class="tag">LEGENDARY</span>
-<img src="A101.jpg">
+            <div class="product-card">
 
-<h3>Account A101</h3>
+                <img src="images/product1.jpg" alt="محصول">
 
-<p>990,000 تومان</p>
+                <h3>دسته بازی موبایل</h3>
 
-<a href="A101.html"><button>مشاهده جزئیات</button></a>
+                <p>۶۹۹,۰۰۰ تومان</p>
 
+                <button
+                    class="add-cart"
+                    data-name="دسته بازی موبایل"
+                    data-price="699000"
+                    data-image="images/product1.jpg">
 
-</div>
+                    افزودن به سبد 🛒
 
-<div class="card">
-<span class="tag">LEGENDARY</span>
-<img src="A102.jpg">
+                </button>
 
-<h3>Account A102</h3>
-
-<p>700,000 تومان</p>
-
-    <a href="A102.html"><button>مشاهده جزئیات</button></a>
-
-</div>
-
-<div class="card">
-<span class="tag">LEGENDARY</span>
-<img src="A103.jpg">
-
-<h3>Account A103</h3>
-
-<p>850,000 تومان</p>
-
-    <a href="A103.html"><button>مشاهده جزئیات</button></a>
+            </div>
 
 
-</div>
+            <div class="product-card">
 
-<div class="card">
-<span class="tag">LEGENDARY</span>
-<img src="A104.jpg">
+                <img src="images/product2.jpg" alt="محصول">
 
-<h3>Account A104</h3>
+                <h3>خنک‌کننده گیمینگ</h3>
 
-<p>1,700,000 تومان</p>
+                <p>۸۵۰,۰۰۰ تومان</p>
 
-    <a href="A104.html"><button>مشاهده جزئیات</button></a>
+                <button
+                    class="add-cart"
+                    data-name="خنک‌کننده گیمینگ"
+                    data-price="850000"
+                    data-image="images/product2.jpg">
+
+                    افزودن به سبد 🛒
+
+                </button>
+
+            </div>
 
 
-</div>
+            <div class="product-card">
 
-</div>
+                <img src="images/product3.jpg" alt="محصول">
 
-</section>
+                <h3>رادیاتوری گیمینگ</h3>
+
+                <p>۹۹۹,۰۰۰ تومان</p>
+
+                <button
+                    class="add-cart"
+                    data-name="رادیاتوری گیمینگ"
+                    data-price="999000"
+                    data-image="images/product3.jpg">
+
+                    افزودن به سبد 🛒
+
+                </button>
+
+            </div>
 
 
+            <div class="product-card">
 
-<footer>
+                <img src="images/product4.jpg" alt="محصول">
 
-<p>© CODM Store</p>
+                <h3>فن حرفه‌ای</h3>
 
-</footer>
+                <p>۱,۲۰۰,۰۰۰ تومان</p>
+
+                <button
+                    class="add-cart"
+                    data-name="فن حرفه‌ای"
+                    data-price="1200000"
+                    data-image="images/product4.jpg">
+
+                    افزودن به سبد 🛒
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="product-section">
+
+        <div class="section-title">
+            <h2>🎯 کاور و تجهیزات انگشتی</h2>
+            <a href="#">همه ←</a>
+        </div>
+
+        <div class="product-slider">
+
+            <div class="product-card">
+
+                <img src="images/product5.jpg" alt="محصول">
+
+                <h3>کاور انگشتی گیمینگ</h3>
+
+                <p>۲۹۹,۰۰۰ تومان</p>
+
+                <button
+                    class="add-cart"
+                    data-name="کاور انگشتی گیمینگ"
+                    data-price="299000"
+                    data-image="images/product5.jpg">
+
+                    افزودن به سبد 🛒
+
+                </button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img src="images/product6.jpg" alt="محصول">
+
+                <h3>آستین انگشتی</h3>
+
+                <p>۳۹۹,۰۰۰ تومان</p>
+
+                <button
+                    class="add-cart"
+                    data-name="آستین انگشتی"
+                    data-price="399000"
+                    data-image="images/product6.jpg">
+
+                    افزودن به سبد 🛒
+
+                </button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img src="images/product7.jpg" alt="محصول">
+
+                <h3>تریگر شیشه‌ای</h3>
+
+                <p>۴۹۹,۰۰۰ تومان</p>
+
+                <button
+                    class="add-cart"
+                    data-name="تریگر شیشه‌ای"
+                    data-price="499000"
+                    data-image="images/product7.jpg">
+
+                    افزودن به سبد 🛒
+
+                </button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img src="images/product8.jpg" alt="محصول">
+
+                <h3>پد انگشتی</h3>
+
+                <p>۱۸۰,۰۰۰ تومان</p>
+
+                <button
+                    class="add-cart"
+                    data-name="پد انگشتی"
+                    data-price="180000"
+                    data-image="images/product8.jpg">
+
+                    افزودن به سبد 🛒
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="product-section">
+
+        <div class="section-title">
+            <h2>🎧 هدفون و ایرپاد</h2>
+            <a href="#">همه ←</a>
+        </div>
+
+        <div class="product-slider">
+
+            <div class="product-card">
+
+                <img src="images/product9.jpg" alt="محصول">
+
+                <h3>ایرپاد گیمینگ</h3>
+
+                <p>۹۹۰,۰۰۰ تومان</p>
+
+                <button
+                    class="add-cart"
+                    data-name="ایرپاد گیمینگ"
+                    data-price="990000"
+                    data-image="images/product9.jpg">
+
+                    افزودن به سبد 🛒
+
+                </button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img src="images/product10.jpg" alt="محصول">
+
+                <h3>ایرپاد حرفه‌ای</h3>
+
+                <p>۸۵۵,۰۰۰ تومان</p>
+
+                <button
+                    class="add-cart"
+                    data-name="ایرپاد حرفه‌ای"
+                    data-price="855000"
+                    data-image="images/product10.jpg">
+
+                    افزودن به سبد 🛒
+
+                </button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img src="images/product11.jpg" alt="محصول">
+
+                <h3>هندزفری گیمینگ</h3>
+
+                <p>۶۹۹,۰۰۰ تومان</p>
+
+                <button
+                    class="add-cart"
+                    data-name="هندزفری گیمینگ"
+                    data-price="699000"
+                    data-image="images/product11.jpg">
+
+                    افزودن به سبد 🛒
+
+                </button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img src="images/product12.jpg" alt="محصول">
+
+                <h3>هدست گیمینگ</h3>
+
+                <p>۱,۵۰۰,۰۰۰ تومان</p>
+
+                <button
+                    class="add-cart"
+                    data-name="هدست گیمینگ"
+                    data-price="1500000"
+                    data-image="images/product12.jpg">
+
+                    افزودن به سبد 🛒
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="product-section">
+
+        <div class="section-title">
+            <h2>⚡ شارژر و لوازم جانبی</h2>
+            <a href="#">همه ←</a>
+        </div>
+
+        <div class="product-slider">
+
+            <div class="product-card">
+
+                <img src="images/product13.jpg" alt="محصول">
+
+                <h3>کابل شارژ سریع</h3>
+
+                <p>۳۹۹,۰۰۰ تومان</p>
+
+                <button
+                    class="add-cart"
+                    data-name="کابل شارژ سریع"
+                    data-price="399000"
+                    data-image="images/product13.jpg">
+
+                    افزودن به سبد 🛒
+
+                </button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img src="images/product14.jpg" alt="محصول">
+
+                <h3>شارژر گیمینگ</h3>
+
+                <p>۷۹۹,۰۰۰ تومان</p>
+
+                <button
+                    class="add-cart"
+                    data-name="شارژر گیمینگ"
+                    data-price="799000"
+                    data-image="images/product14.jpg">
+
+                    افزودن به سبد 🛒
+
+                </button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img src="images/product15.jpg" alt="محصول">
+
+                <h3>کابل تایپ C</h3>
+
+                <p>۲۹۹,۰۰۰ تومان</p>
+<button
+                    class="add-cart"
+                    data-name="کابل تایپ C"
+                    data-price="299000"
+                    data-image="images/product15.jpg">
+
+                    افزودن به سبد 🛒
+
+                </button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img src="images/product16.jpg" alt="محصول">
+
+                <h3>هاب USB</h3>
+
+                <p>۵۹۹,۰۰۰ تومان</p>
+
+                <button
+                    class="add-cart"
+                    data-name="هاب USB"
+                    data-price="599000"
+                    data-image="images/product16.jpg">
+
+                    افزودن به سبد 🛒
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="shop-bottom-space"></div>
+
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="nav-item">
+            <span>⌂</span>
+            خانه
+        </a>
+
+        <a href="#" class="nav-item">
+            <span>🎮</span>
+            بازی
+        </a>
+
+        <a href="shop.html" class="nav-item active">
+            <span>🛍️</span>
+            فروشگاه
+        </a>
+
+    </nav>
+
+
+    <script src="shop.js"></script>
 
 </body>
 

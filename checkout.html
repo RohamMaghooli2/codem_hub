@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ثبت سفارش | Codem Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="checkout-body">
+
+    <main class="checkout-page">
+
+        <header class="checkout-header">
+
+            <a href="cart.html" class="back-btn">
+                ← بازگشت به سبد
+            </a>
+
+            <div class="checkout-title">
+
+                <span class="checkout-title-icon">
+                    🎮
+                </span>
+
+                <div>
+
+                    <h1>
+                        ثبت سفارش
+                    </h1>
+
+                    <p>
+                        اطلاعات سفارش خود را وارد کنید
+                    </p>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="checkout-card gaming-card">
+
+            <div class="card-heading">
+
+                <div class="heading-icon">
+                    👤
+                </div>
+
+                <div>
+
+                    <h2>
+                        اطلاعات خریدار
+                    </h2>
+
+                    <p>
+                        برای تکمیل سفارش
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="gaming-input">
+
+                <span>
+                    👤
+                </span>
+
+                <input
+                    id="customerName"
+                    type="text"
+                    placeholder="نام و نام خانوادگی"
+                    autocomplete="name"
+                >
+
+            </div>
+
+
+            <div class="gaming-input">
+
+                <span>
+                    📱
+                </span>
+
+                <input
+                    id="customerPhone"
+                    type="tel"
+                    placeholder="شماره تماس"
+                    autocomplete="tel"
+                >
+
+            </div>
+
+
+            <div class="gaming-input textarea-input">
+
+                <span>
+                    📍
+                </span>
+
+                <textarea
+                    id="customerAddress"
+                    placeholder="آدرس کامل برای ارسال"
+                    autocomplete="street-address"
+                ></textarea>
+
+            </div>
+
+        </section>
+
+
+        <section class="checkout-card gaming-card">
+
+            <div class="card-heading">
+
+                <div class="heading-icon">
+                    🛒
+                </div>
+
+                <div>
+
+                    <h2>
+                        خلاصه سفارش
+                    </h2>
+
+                    <p>
+                        محصولات انتخابی شما
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div id="checkoutItems"
+                 class="checkout-items">
+
+            </div>
+
+
+            <div class="checkout-total">
+
+                <span>
+                    مبلغ نهایی
+                </span>
+
+                <strong>
+
+                    <span id="checkoutTotal">
+                        ۰
+                    </span>
+
+                    تومان
+
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <button
+            id="submitOrder"
+            class="checkout-submit"
+            type="button">
+
+            <span>
+                ⚡
+            </span>
+
+            ثبت نهایی سفارش
+
+        </button>
+
+
+        <div class="checkout-security">
+
+            🔒 اطلاعات شما فقط برای ثبت سفارش استفاده می‌شود.
+
+        </div>
+
+    </main>
+
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="nav-item">
+
+            <span>
+                ⌂
+            </span>
+
+            خانه
+
+        </a>
+
+
+        <a href="shop.html" class="nav-item">
+
+            <span>
+                🛍️
+            </span>
+
+            فروشگاه
+
+        </a>
+
+
+        <a href="cart.html" class="nav-item">
+
+            <span>
+                🛒
+            </span>
+
+            سبد خرید
+
+        </a>
+
+    </nav>
+
+
+    <script src="checkout.js"></script>
+
+</body>
+</html>
